@@ -1,0 +1,47 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body style="display: flex">
+    <div style="width: 245px; height: 500px">
+      <form action="random" method="post">
+        <textarea
+          placeholder="請輸入抽選名單"
+          name="input"
+          id="input"
+          cols="30"
+          rows="10"
+          th:text="${input}"
+        ></textarea>
+        <input
+          type="submit"
+          value="抽選"
+          style="margin-left: 104.16665; margin-top: 10"
+        />
+      </form>
+      <textarea
+        placeholder="抽選結果"
+        name="output"
+        id="output"
+        cols="30"
+        rows="10"
+        readonly="false"
+        style="margin-top: 50px"
+        th:text="${output}"
+      ></textarea>
+      <div>
+        <form action="copy" method="post">
+          <input type="submit" value="複製結果" />
+        </form>
+        <form action="clean" method="post">
+          <input type="submit" value="清除全部" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
