@@ -28,7 +28,7 @@ public class RandomSelection {
     }
 
     @PostMapping("/copy")
-    public ModelAndView Copy() {
+    public void Copy() {
 
     }
 
