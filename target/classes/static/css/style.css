@@ -2,38 +2,40 @@ body {
   background-color: #232323 !important;
 }
 
-.container {
-  display: inline-flex;
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-}
-
-#myForm {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
+body .container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    " . . . . "
+    " . display display . "
+    " . display display . "
+    " . . . . ";
 }
 
 .display {
+  grid-area: display;
+}
+
+.display .textarea {
   display: flex;
-  justify-content: left;
-  margin: 10px;
+  justify-content: space-around;
 }
 
 .display textarea {
+  grid-area: textarea;
   resize: none;
-  margin: 10px;
 }
 
-.btn {
-  padding: 0;
-  margin-left: 30px;
+.display .btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.btn #submit,
-#copy,
-#clean {
+.display .btn #submit #copy #clean {
   margin: 10px;
 }

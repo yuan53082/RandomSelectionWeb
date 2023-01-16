@@ -18,10 +18,11 @@
 
   <body>
     <div class="container">
-      <form id="myForm">
-        <span class="display">
-          <textarea
-            placeholder="請輸入抽選名單（一行為一筆名單）
+      <div class="display">
+        <form id="myForm">
+          <div class="textarea">
+            <textarea
+              placeholder="請輸入抽選名單（一行為一筆名單）
 範例：
 阿爾傑斯
 李貝留斯
@@ -32,33 +33,33 @@
 耶卡
 帕魯凱斯
 "
-            name="input"
-            id="input"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <textarea
-            placeholder="抽選結果"
-            name="output"
-            id="output"
-            cols="30"
-            rows="10"
-            readonly="false"
-            aria-disabled="true"
-          ></textarea>
-        </span>
-
-        <span class="btn">
-          <input
-            id="submit"
-            type="submit"
-            value="抽選"
-            class="btn btn-outline-success"
-          />
-          <button id="copy" class="btn btn-outline-primary">複製結果</button>
-          <button id="clean" class="btn btn-outline-danger">清除全部</button>
-        </span>
-      </form>
+              name="input"
+              id="input"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <textarea
+              placeholder="抽選結果"
+              name="output"
+              id="output"
+              cols="30"
+              rows="10"
+              readonly="false"
+              aria-disabled="true"
+            ></textarea>
+          </div>
+          <div class="btn">
+            <input
+              id="submit"
+              type="submit"
+              value="開始抽選"
+              class="btn btn-outline-success"
+            />
+            <button id="copy" class="btn btn-outline-primary">複製結果</button>
+            <button id="clean" class="btn btn-outline-danger">清除全部</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
