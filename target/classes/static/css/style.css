@@ -1,3 +1,39 @@
-textarea {
+body {
+  background-color: #232323 !important;
+}
+
+.container {
+  display: inline-flex;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#myForm {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+}
+
+.display {
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+}
+
+.display textarea {
   resize: none;
+  margin: 10px;
+}
+
+.btn {
+  padding: 0;
+  margin-left: 30px;
+}
+
+.btn #submit,
+#copy,
+#clean {
+  margin: 10px;
 }
