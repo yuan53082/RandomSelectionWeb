@@ -1,3 +1,10 @@
+setInterval(() => {
+  let date = new Date();
+  let clock = document.getElementById("clock");
+  clock.innerHTML =
+    date.getHours() + "：" + date.getMinutes() + "：" + date.getSeconds();
+}, 1000);
+
 function random(e) {
   e.preventDefault(); // 防止表單送出
   var data = $("#input").val(); // 用data變數把input內容裝起來

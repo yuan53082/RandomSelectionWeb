@@ -1,17 +1,21 @@
 body .container {
   background-color: #232323 !important;
-  margin: 0;
-  padding: 0;
   max-width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    " . . . . "
-    " . display display . "
-    " . display display . "
-    " . . . . ";
+    ". . . clock"
+    ". display display ."
+    ". display display ."
+    ". . . .";
+}
+
+body .container #clock {
+  grid-area: clock;
+  color: white;
+  font-size: xx-large;
 }
 
 .display {
@@ -24,7 +28,6 @@ body .container {
 }
 
 .display textarea {
-  grid-area: textarea;
   resize: none;
 }
 
