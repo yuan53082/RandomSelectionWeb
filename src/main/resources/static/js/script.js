@@ -24,7 +24,7 @@ function random(e) {
     success: function (data) {
       // 當以上執行完畢後，執行的內容
       $("#output").val(data); // 將output內容設置為由後端回傳的名為data的資料
-      alert("恭喜！中獎者是：" + data);
+      alert("恭喜「" + data + "」是我們的天選之人！");
     },
   });
 }
@@ -34,7 +34,7 @@ function copy(e) {
   var copyText = document.getElementById("output"); // 用一變數copyText裝output中的文字內容
   copyText.select(); // 選取到copyText這個變數
   document.execCommand("copy"); // document.execCommand('copy') 是一個 JavaScript 方法，它會觸發瀏覽器的剪貼簿功能。其中 'copy' 就是指複製的意思。
-  alert("中獎名單：" + copyText.value + " 複製成功！"); // 顯示複製成功訊息
+  alert("中獎名單：「" + copyText.value + "」 複製成功！"); // 顯示複製成功訊息
 }
 
 function clean(e) {

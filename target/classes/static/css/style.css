@@ -2,6 +2,7 @@ body {
   background-color: #232323 !important;
 }
 
+<<<<<<< HEAD
 .container {
   display: inline-flex;
   padding: 0px;
@@ -35,5 +36,43 @@ body {
 .btn #submit,
 #copy,
 #clean {
+  margin: 10px;
+=======
+body .container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    " . . . . "
+    " . display display . "
+    " . display display . "
+    " . . . . ";
+}
+
+.display {
+  grid-area: display;
+}
+
+.display .textarea {
+  display: flex;
+  justify-content: space-around;
+}
+
+.display textarea {
+  grid-area: textarea;
+  resize: none;
+>>>>>>> 65d7bb747fe81b862321f4e2b581fb180ff107c7
+}
+
+.display .btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.display .btn #submit #copy #clean {
   margin: 10px;
 }
